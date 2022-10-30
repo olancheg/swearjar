@@ -20,8 +20,8 @@ Gem::Specification.new do |s|
   s.test_files = `git ls-files`.split("\n").select{|f| f =~ /^spec/}
 
   # dependencies
+  s.add_runtime_dependency 'emoji_regex', '~> 3.2'
   s.add_development_dependency 'rake',    '>= 12.3.3'
   s.add_development_dependency 'rspec',   '~> 3.9'
   s.add_development_dependency 'pry',   '~> 0.13'
 end
-
